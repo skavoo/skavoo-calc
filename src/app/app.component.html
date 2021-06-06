@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+
+<p> Numero 1: <input type='number' [(ngModel)]='numero1'> </p>
+<p> Numero 2: <input type='number' [(ngModel)]='numero2'> </p>
+
+<br>
+<table class="digit-table-h">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>m</td>
+      <td>c</td>
+      <td>d</td>
+      <td>u</td>
+    </tr>
+  </tbody>
+</table>
+<digit-component [numero]=numero1></digit-component>
+<digit-component [numero]=numero2></digit-component>
